@@ -43,9 +43,10 @@ eleSubmit.addEventListener('click', function(){
 
         //Calcolo prezzo totale
         var subPrice = price * km;
-        var totalPrice = discount ? subPrice * discount / 100 : subPrice;
+        discount *= subPrice / 100;
+        var totalPrice = subPrice - discount;
 
-        //console.log(totalPrice);
+        console.log(totalPrice);
 
     }else{
         alert('Attenzione! formato km non valido, assicurati di inserire solo numeri');
