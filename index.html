@@ -17,15 +17,15 @@
             <div>
                 <!-- input Full Name -->
                 <label for="full-name">Nome e Cognome</label>
-                <input type="text" id="full-name" placeholder="Nome e Cognome">
+                <input type="text" id="full-name" placeholder="Nome e Cognome" required>
 
                 <!-- input Km -->
                 <label for="km">Km da percorrere</label>
-                <input type="number" id="km" min="1" placeholder="Km che vuoi percorrere">
+                <input type="number" id="km" min="1" placeholder="Km che vuoi percorrere" required>
 
                 <!-- input select age -->
                 <label for="age">Fascia d'età</label>
-                <select id="age">
+                <select id="age" required>
                     <option value="" disabled selected hidden>Seleziona una fascia di età</option>
                     <option value="minorenne">Minorenne</option>
                     <option value="maggiorenne">Maggiorenne</option>
@@ -40,7 +40,36 @@
         <!-- fine sezione input -->
 
         <!-- sezione output -->
-        <section></section>
+        <section class="hidden" id="output">
+            <h2>Dettaglio passeggieri</h2>
+            <div class="row">
+                <div class="col">
+                    <h3 id="output-full-name"></h3>
+                </div>
+                <div class="col">
+                    <!-- inizio tabella -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo Biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="discount"></td>
+                                <td id="carriage"></td>
+                                <td id="code-cp"></td>
+                                <td id="price"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- fine tabella -->
+                </div>
+            </div>
+        </section>
         <!-- fine sezione output -->
     </main>
     <!-- fine contenuto principale -->
