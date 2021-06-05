@@ -69,6 +69,9 @@ label{
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+.justifay-between{
     justify-content: space-between;
 }
 
@@ -97,4 +100,26 @@ select{
     border-radius: 5px;
     border: 2px solid rgb(170,42,81);
     padding: 5px 10px;
+}
+
+.border-top-bottom{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.bk-gray{
+    background: grey;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+.col-3{
+    flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+}
+
+table {
+    border-spacing: 40px;
 }

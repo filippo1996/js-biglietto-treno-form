@@ -14,9 +14,9 @@
         <main>
             <h1 class="title cl-white tx-align-center">Calcola il prezzo del tuo biglietto</h1>
             <!-- sezione input -->
-            <section>
+            <div class="margin-b-2">
                 <div class="row p-all border-radius-10 box-shadow">
-                    <div class="d-flex tx-align-center margin-b-2 cl-fuxia">
+                    <div class="d-flex justifay-between tx-align-center margin-b-2 cl-fuxia">
                         <!-- input Full Name -->
                         <div class="p-10">
                             <label for="full-name">Nome e Cognome</label>
@@ -47,37 +47,40 @@
                         <button class="btn margin-start-1" id="cancel">Annulla</button>
                     </div>
                 </div>
-            </section>
+            </div>
             <!-- fine sezione input -->
 
             <!-- sezione output -->
             <section class="hidden" id="output">
-                <h2>Dettaglio passeggieri</h2>
-                <div class="row">
-                    <div class="col">
-                        <h3 id="output-full-name"></h3>
-                    </div>
-                    <div class="col">
-                        <!-- inizio tabella -->
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Offerta</th>
-                                    <th>Carrozza</th>
-                                    <th>Codice CP</th>
-                                    <th>Costo Biglietto</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td id="discount"></td>
-                                    <td id="carriage"></td>
-                                    <td id="code-cp"></td>
-                                    <td id="price"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- fine tabella -->
+                <h2 class="title cl-white tx-align-center">Il tuo biglietto</h2>
+                <div class="row p-10">
+                    <h3 class="title">Dettaglio passeggieri</h3>
+                    <div class="d-flex no-wrap border-top-bottom">
+                        <div class="col-3 bk-gray p-10">
+                            <h3 class="title">Nome passeggiero <span id="output-full-name"></span></h3>
+                        </div>
+                        <div class="col p-10">
+                            <!-- inizio tabella -->
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Offerta</th>
+                                        <th>Carrozza</th>
+                                        <th>Codice CP</th>
+                                        <th>Costo Biglietto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="discount"></td>
+                                        <td id="carriage"></td>
+                                        <td id="code-cp"></td>
+                                        <td id="price"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- fine tabella -->
+                        </div>
                     </div>
                 </div>
             </section>

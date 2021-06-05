@@ -61,7 +61,7 @@ eleSubmit.addEventListener('click', function(){
          */
 
          eleOutput.className = '';
-         eleOutputFullName.innerHTML = `Nome passeggiero ${fullName}`;
+         eleOutputFullName.innerHTML = `${fullName}`;
          eleDiscount.innerHTML = message;
          eleCarriage.innerHTML = carriage;
          eleCodeCp.innerHTML = codeCp;
