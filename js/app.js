@@ -65,7 +65,7 @@ eleSubmit.addEventListener('click', function(){
          eleDiscount.innerHTML = message;
          eleCarriage.innerHTML = carriage;
          eleCodeCp.innerHTML = codeCp;
-         elePrice.innerHTML = `${totalPrice} \u20AC`;
+         elePrice.innerHTML = `${totalPrice.toFixed(2)} \u20AC`;
 
     }else{
         alert('Attenzione! campi non compilati correttamente, riprova');

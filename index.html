@@ -9,71 +9,83 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- contenuto principale -->
-    <main>
-        <h1>Calcola il prezzo del tuo biglietto</h1>
-        <!-- sezione input -->
-        <section>
-            <div>
-                <!-- input Full Name -->
-                <label for="full-name">Nome e Cognome</label>
-                <input type="text" id="full-name" placeholder="Nome e Cognome" required>
+    <div class="container">
+        <!-- contenuto principale -->
+        <main>
+            <h1 class="title cl-white tx-align-center">Calcola il prezzo del tuo biglietto</h1>
+            <!-- sezione input -->
+            <section>
+                <div class="row p-all border-radius-10 box-shadow">
+                    <div class="d-flex tx-align-center margin-b-2 cl-fuxia">
+                        <!-- input Full Name -->
+                        <div class="p-10">
+                            <label for="full-name">Nome e Cognome</label>
+                            <input type="text" id="full-name" placeholder="Nome e Cognome" required>
+                        </div>
 
-                <!-- input Km -->
-                <label for="km">Km da percorrere</label>
-                <input type="number" id="km" min="1" placeholder="Km che vuoi percorrere" required>
+                        <!-- input Km -->
+                        <div class="p-10">
+                            <label for="km">Km da percorrere</label>
+                            <input type="number" id="km" min="1" placeholder="Km che vuoi percorrere" required>
+                        </div>
 
-                <!-- input select age -->
-                <label for="age">Fascia d'età</label>
-                <select id="age" required>
-                    <option value="" disabled selected hidden>Seleziona una fascia di età</option>
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="over65">Over 65</option>
-                </select>
+                        <!-- input select age -->
+                        <div class="p-10">
+                            <label for="age">Fascia d'età</label>
+                            <select id="age" required>
+                                <option value="" disabled selected>Seleziona una fascia di età</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <!-- submit / cancel -->
-                <button id="submit">Genera</button>
-                <button id="cancel">Annulla</button>
-            </div>
-        </section>
-        <!-- fine sezione input -->
-
-        <!-- sezione output -->
-        <section class="hidden" id="output">
-            <h2>Dettaglio passeggieri</h2>
-            <div class="row">
-                <div class="col">
-                    <h3 id="output-full-name"></h3>
+                    <!-- submit / cancel -->
+                    <div class="tx-align-center">
+                        <button class="btn" id="submit">Genera</button>
+                        <button class="btn margin-start-1" id="cancel">Annulla</button>
+                    </div>
                 </div>
-                <div class="col">
-                    <!-- inizio tabella -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Offerta</th>
-                                <th>Carrozza</th>
-                                <th>Codice CP</th>
-                                <th>Costo Biglietto</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="discount"></td>
-                                <td id="carriage"></td>
-                                <td id="code-cp"></td>
-                                <td id="price"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- fine tabella -->
-                </div>
-            </div>
-        </section>
-        <!-- fine sezione output -->
-    </main>
-    <!-- fine contenuto principale -->
+            </section>
+            <!-- fine sezione input -->
 
+            <!-- sezione output -->
+            <section class="hidden" id="output">
+                <h2>Dettaglio passeggieri</h2>
+                <div class="row">
+                    <div class="col">
+                        <h3 id="output-full-name"></h3>
+                    </div>
+                    <div class="col">
+                        <!-- inizio tabella -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="discount"></td>
+                                    <td id="carriage"></td>
+                                    <td id="code-cp"></td>
+                                    <td id="price"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- fine tabella -->
+                    </div>
+                </div>
+            </section>
+            <!-- fine sezione output -->
+        </main>
+        <!-- fine contenuto principale -->
+    </div>
+    
     <!-- Script JS -->
     <script src="js/app.js"></script>
 </body>
